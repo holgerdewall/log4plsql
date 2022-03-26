@@ -3,3 +3,6 @@ jlib/
 install.txt
 .project
 .settings/
+/bin/
+.classpath
+lib/
