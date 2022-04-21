@@ -6,3 +6,5 @@ install.txt
 /bin/
 .classpath
 lib/
+build/
+env.sh
