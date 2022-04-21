@@ -59,7 +59,7 @@ else
     if [ -e $ORACLE_HOME/oc4j/j2ee/home/lib/jms.jar ]; then 
         CLASSPATH=$CLASSPATH:$ORACLE_HOME/oc4j/j2ee/home/lib/jms.jar
     else
-        CLASSPATH=$CLASSPATH:$ORACLE_HOME/oc4j/j2ee/home/lib/jms.jar
+        CLASSPATH=$CLASSPATH:$ORACLE_HOME/rdbms/jlib/jmscommon.jar
     fi
     
     # Using Java 1.5, can't use ojdbc7 or 6:
@@ -77,6 +77,8 @@ else
         CLASSPATH=$CLASSPATH:$ORACLE_HOME/jdbc/lib/ojdbc5.jar
     elif [ -e "$ORACLE_HOME/owb/wf/lib/ojdbc14.jar" ]; then
         CLASSPATH=$CLASSPATH:$ORACLE_HOME/owb/wf/lib/ojdbc14.jar
+    elif [ -e "$ORACLE_HOME/jdbc/lib/ojdbc8.jar" ]; then
+        CLASSPATH=$CLASSPATH:$ORACLE_HOME/jdbc/lib/ojdbc8.jar
     fi
 
 fi
