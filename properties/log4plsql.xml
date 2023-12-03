@@ -38,10 +38,10 @@
                     |   see : JDBC Developer's Guide and Reference / Verifying a JDBC Client Installation
                     |         for all installation Oracle driver install
                     +-->
-                  <username>pl</username>
-                  <password>pl</password>
-                   <!-- jdbc:oracle:thin:@<host_name>:<port_number>:<sid>  -->
-                  <dburl>jdbc:oracle:thin:@192.168.10.251:1521:orcl</dburl>
+                  <username>logger</username>
+                  <password>oracle</password>
+                   <!-- jdbc:oracle:thin:@<host_name>:<port_number>/<sid>  -->
+                  <dburl>jdbc:oracle:thin:@127.0.0.1:1521:freepdb1</dburl>
                 </connection>
                    <!-- the default value of the queue is LOG_QUEUE_TOPIC
                     +-->
@@ -50,4 +50,3 @@
         </database>
     </logSource>
 </log4plsql>
-
