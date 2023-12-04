@@ -37,6 +37,10 @@
 
     <!-- Java Message Service (JMS) API -->
     <version.javax.jms-api>2.0.1</version.javax.jms-api>
+
+    <!-- JmDNS -->
+    <version.javax.jmdns>3.4.1</version.javax.jmdns>
+
   </properties>
 
   <dependencies>
@@ -50,6 +54,12 @@
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
       <version>${version.org.apache.log4j}</version>
+    </dependency>
+
+    <dependency>
+      <groupId>javax.jmdns</groupId>
+      <artifactId>jmdns</artifactId>
+      <version>${version.javax.jmdns}</version>
     </dependency>
 
     <dependency>
