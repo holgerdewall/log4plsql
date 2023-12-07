@@ -1,8 +1,8 @@
 set serveroutput on
 declare
-ctx PLOGPARAM.LOG_CTX  := plog.init('de.alldewall');
+ctx PLOGPARAM.LOG_CTX  := plog.init('HDW.PLOG.EXAMPLE');
 v_out varchar2(100);
-x varchar2(5);
+x varchar2(20);
 begin
   x := 'Hello World';
   select 'test' into v_out from dual where 1 = 0;
